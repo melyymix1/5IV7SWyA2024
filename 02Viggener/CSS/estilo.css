@@ -1,16 +1,8 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0px;
     color: black;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
 
 header {
     background-color: #85b394;
@@ -35,13 +27,30 @@ header nav ul li a:hover {
     color: rgb(255, 255, 255);
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px; 
     padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0;
 }
 
 .form-group {
@@ -52,7 +61,7 @@ label {
     font-weight: bold;
 }
 
-textarea, input[type="text"], input[type="range"] {
+textarea, input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -64,13 +73,25 @@ input[type="text"] {
     color: #333;
 }
 
-input[type="range"] {
+input[type="button"] {
     background-color: #007BFF;
     color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#cifrado {
+#res {
     background-color: #f9f9f9;
     color: #333;
     font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#res:focus {
+    outline: none;
 }
