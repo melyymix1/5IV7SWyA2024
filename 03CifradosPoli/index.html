@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrados</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<div class="header">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Index</a></li>
+          <li><a href="../03CifradosPoli/index.html">03 Polialfabetico</a></li>
+        </ul>
+      </nav>
+    </header></div>
+<body>
+    <div class="conteiner">
+        <h1>Cifrado Cesar y Viggenere</h1>
+        <div class="form-group">
+            <label for="texto">Texto a cifrar/descifrar:</label>
+            <textarea id="texto" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="metodo">Tipo de Cifrado:</label>
+            <select id="metodo">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="cesar">Cifrado Cesar</option>
+                <option value="vigenere">Cifrado Viggenere</option>
+            </select>
+        </div>
+        <div class="form-group" id="clave-group" style="display: none;">
+            <label for="clave">Clave:</label>
+            <input type="text" id="clave">
+        </div>
+        <div class="form-group" id="desplazamiento-group" style="display: none;">
+            <label for="desplazamiento">Desplazamiento:</label>
+            <input type="text" id="desplazamiento" name="desplazamiento" class="form-control">
+        </div>        
+        <div class="form-group" id="resultado-group" style="display: none;">
+            <label for="resultado">Resultado:</label>
+            <textarea id="resultado" rows="4" readonly></textarea>
+        </div>
+        <button id="cifrar" style="display: none;">Cifrar</button>
+        <button id="descifrar" style="display: none;">Descifrar</button>
+        <button id="copiar" style="display: none;">Copiar Resultado</button>
+        <button id="reiniciar" style="display: none;">Reiniciar</button>
+    </div>
+    <script src="./JS/funciones.js"></script>
+</body>
+</html>
